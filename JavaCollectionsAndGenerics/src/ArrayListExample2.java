@@ -16,6 +16,11 @@ public class ArrayListExample2 {
 		unsortedList.add("C");
 		unsortedList.add("B");
 		
+		System.out.println("Before Sorting");
+		for(String str: unsortedList)
+		{
+			System.out.println(str);
+		}
 		Collections.sort(unsortedList);//by-default Ascending order
 		
 		for(String name:unsortedList)
@@ -74,6 +79,7 @@ public class ArrayListExample2 {
 		
 		//Remove all the elements from the arraylist
 		ll.removeAll(list1);
+		System.out.println(ll.size());
 		
 		ListIterator listIt=ll.listIterator();
 		while(listIt.hasNext())

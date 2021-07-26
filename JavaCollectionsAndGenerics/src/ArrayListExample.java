@@ -3,9 +3,13 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
+
+
 public class ArrayListExample {
 
 	public static void main(String[] args) {
+		
+		
 		
 		ArrayList al = new ArrayList();
 		al.add("Hello");

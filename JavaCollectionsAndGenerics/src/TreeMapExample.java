@@ -4,17 +4,19 @@ import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
 public class TreeMapExample {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		TreeMap<String, String> treeMap=new TreeMap<String, String>();
-		treeMap.put("1", "A");
-		treeMap.put("2", "B");
 		
-		treeMap.put("2", "C");
+		TreeMap<String, String> treeMap=new TreeMap<String, String>();
+		treeMap.put("Java", "A");
+		treeMap.put("C", "B");
+		
+		treeMap.put("Java", "C");
 		
 		//treeMap.put(null, null);
 		

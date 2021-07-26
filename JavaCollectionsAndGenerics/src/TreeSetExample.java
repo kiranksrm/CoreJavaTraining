@@ -11,6 +11,7 @@ public class TreeSetExample {
 		ts.add(20);
 		ts.add(5);
 		ts.add(10);//
+		//ts.add(null);// Null will not be allowed
 		
 		Iterator it=ts.iterator();
 		while(it.hasNext())

@@ -24,10 +24,20 @@ public class Customer1 implements Comparable<Customer1>{
 	}
 	
 	
+//	@Override
+//	public int compareTo(Customer1 o) {
+//		
+//		return this.name.compareTo(o.getName());
+//	}
 	@Override
-	public int compareTo(Customer1 o) {
-		
-		return this.name.compareTo(o.getName());
+	public int compareTo(Customer1 o)
+	{
+	  if(this.sal==o.getSal())
+		  return 0;
+	  if(this.sal>o.getSal())
+		  return 1;
+	  else
+		  return -1;
 	}
 	
 	

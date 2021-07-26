@@ -42,7 +42,7 @@ public class Customer2 implements Comparator{
 		
 		if(c1.getSal()==c2.getSal() && (c1.getName().equalsIgnoreCase(c2.getName())))
 			return 0;
-		else if (c1.getSal()>c2.getSal() && (c1.getName().equalsIgnoreCase(c2.getName())))
+		else if (c1.getSal()<c2.getSal() && (c1.getName().equalsIgnoreCase(c2.getName())))
 			return 1;
 		else
 			return -1;

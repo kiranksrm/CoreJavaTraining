@@ -1,8 +1,9 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
-public class ComparatorExample {
+public class ComparatorExample1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -42,9 +43,9 @@ public class ComparatorExample {
 		m1.setSal(2000);
 		
 		MyCustomer2 m2= new MyCustomer2();
-		m2.setId(2001);
-		m2.setName("MyCustomer2");
-		m2.setSal(1000);
+		m2.setId(1001);
+		m2.setName("MyCustomer1");
+		m2.setSal(2000);
 		
 		myList.add(m1);
 		myList.add(m2);
@@ -55,7 +56,18 @@ public class ComparatorExample {
 			System.out.println(c.getId()+" "+c.getName()+" "+c.getSal());
 		}
 		
-		//Collections.sort(myList,new MyCustomer2());
+		Collections.sort(myList, new Comparator<MyCustomer2>() {
+
+			@Override
+			public int compare(MyCustomer2 o1, MyCustomer2 o2) {
+				if(o1.getSal()==o2.getSal())
+				  return 0;
+				else if(o1.getSal()>o2.getSal())
+					return 1;
+				else
+					return -1;
+			}
+		});
 		for(MyCustomer2 c:myList)
 		{
 			System.out.println(c.getId()+" "+c.getName()+" "+c.getSal());

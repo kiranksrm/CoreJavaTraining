@@ -11,10 +11,8 @@ public class HashMapExample1 {
 		map.put("1", "A");
 		map.put("2", "B");
 		map.put("3", "C");
-		
 		map.put("3", null);//try insert duplicate (override the key value)
 		map.put(null, null);
-		
 		//map.put(null, null);
 		map.replace("3", "P");
 		
@@ -23,11 +21,11 @@ public class HashMapExample1 {
 		HashMapExample1 h2=new HashMapExample1();
 		HashMapExample1 h3=new HashMapExample1();
 		HashMapExample1 h4=new HashMapExample1();
-		
-		System.out.println(h1);
-		System.out.println(h2);
-		System.out.println(h3);
-		System.out.println(h4);
+//		
+//		System.out.println(h1);
+//		System.out.println(h2);
+//		System.out.println(h3);
+//		System.out.println(h4);
 //		System.out.println(map.get("1"));
 //		System.out.println(map.get("2"));
 //		System.out.println(map.get("3"));
@@ -38,10 +36,10 @@ public class HashMapExample1 {
 		while(it.hasNext())
 		{
 			Map.Entry entry=(Map.Entry)it.next();
-			if(map.containsKey("2"))
-			{
-				
-			}
+//			if(map.containsKey("2"))
+//			{
+//				
+//			}
 			System.out.println("Key= "+entry.getKey()+", Value="+entry.getValue());
 			
 		}

@@ -1,3 +1,4 @@
+import java.awt.List;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.ListIterator;
@@ -35,9 +36,17 @@ public class ArrayListExample1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+		ArrayList l = new ArrayList();
+		l.add("C");
+		l.add("B");
+		l.add("A");
+		System.out.println(l);
+		
 		ArrayList<Employee> al = new ArrayList<Employee>();
 		
 		System.out.println(al.size());
+		
+		
 		for(int i=0;i<12;i++)
 		{
 			//al.add(i);
@@ -73,7 +82,10 @@ public class ArrayListExample1 {
 		//Foreach loop
 		for(Employee e1:al)
 		{
-			
+//			if(e1.getId()==6)
+//			{
+//				al.remove(e1);
+//			}
 			System.out.print("ID: "+e1.getId());
 			System.out.print(" Name: "+e1.getName());
 			System.out.print(" Salary "+e1.getSal());
@@ -85,16 +97,31 @@ public class ArrayListExample1 {
 		{
 			
 			Employee e1= al.get(i);
-			if(e1.getId()==6)
-			{
-				al.remove(i);
-			}
+//			if(e1.getId()==6)
+//			{
+//				al.remove(i);
+//			}
 			System.out.print("ID: "+e1.getId());
 			System.out.print(" Name: "+e1.getName());
 			System.out.print(" Salary "+e1.getSal());
 			System.out.println();
 		}
 		
+		
+		ListIterator it1 = al.listIterator();
+		while(it1.hasNext())
+		{
+			Employee e1= (Employee)it1.next();
+			
+			if(e1.getId()==5)
+			{
+				al.remove(e1);
+			}
+			System.out.print("ID: "+e1.getId());
+			System.out.print(" Name: "+e1.getName());
+			System.out.print(" Salary "+e1.getSal());
+			System.out.println();
+		}
 	}
 
 }
