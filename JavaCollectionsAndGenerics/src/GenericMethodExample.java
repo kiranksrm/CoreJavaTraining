@@ -11,6 +11,14 @@ public class GenericMethodExample {
 		System.out.println();
 	}
 	
+	//public static<Integer> void printArray(Integer[] elements)
+	//{
+	// for(Integer element: elemements)
+	// {
+	//   Syso(element);
+	// }
+	//}
+	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

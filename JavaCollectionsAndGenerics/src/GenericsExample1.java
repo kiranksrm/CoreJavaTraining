@@ -4,16 +4,16 @@
  *
  * @param <P>
  */
-public class GenericsExample1<P> { //T --Type of Parameter
+public class GenericsExample1<T> { //T --Type of Parameter
 
-	P obj;   //T --> String, Integer, Userdefined Object.
+	T obj;   //T --> String, Integer, Userdefined Object.
 	
-	void add(P obj)
+	void add(T obj)
 	{
 		this.obj=obj;
 	}
 	
-	P get()
+	T get()
 	{
 		return this.obj;
 	}

@@ -2,14 +2,14 @@ import java.io.IOException;
 
 class Parent
 {
-	protected void msg() throws IOException
+	protected void msg() throws RuntimeException
 	{
 		System.out.println("Parent msg method");
 	}
 }
 class Child extends Parent
 {
-	public void msg() throws ArithmeticException
+	public void msg() throws ArrayIndexOutOfBoundsException
 	{
 		System.out.println("Child msg method");
 	}
